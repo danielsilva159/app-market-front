@@ -1,0 +1,46 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 400px;
+  background-color: #fff;
+  margin: 100px auto;
+  border-radius: 10px;
+}
+.img-logo{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.information{
+  width: 50%;
+  mat-form-field{
+    width: 80%;
+  }
+}
+.button{
+  display: flex;
+  flex-direction: column;
+  button{
+    width: 80%;
+    height: 40px;
+    background-color: #0000ff;
+    color:#fff;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover{
+      background-color: #fff;
+      color: #0000ff;
+    }
+  }
+  a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0000ff;
+    &:hover{
+      color:#000
+    }
+  }
+
+}
