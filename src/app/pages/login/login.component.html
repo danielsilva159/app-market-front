@@ -3,20 +3,22 @@
     <img src="../../../assets/logo.jpg" alt="">
   </div>
   <div class="information">
+    <form [formGroup]="form" (ngSubmit)="sendLogin()">
     <mat-form-field appearance="outline">
       <mat-label>Email</mat-label>
-      <input type="email" matInput placeholder="Enter your email">
+      <input type="email" matInput formControlName="email"  placeholder="Enter your email" autocomplete="off">
 
     </mat-form-field>
     <mat-form-field appearance="outline">
     <mat-label>Password</mat-label>
-      <input type="password" matInput placeholder="Enter your password">
+      <input type="password" matInput formControlName="password"  placeholder="Enter your password" autocomplete="off">
 
     </mat-form-field>
     <div class="button">
-      <button>Enter</button>
+      <button type="submit" [disabled]="!form.valid">Enter</button>
       <a href="#">forgot password</a>
       <a routerLink="/register">Register</a>
     </div>
+  </form>
   </div>
 </div>

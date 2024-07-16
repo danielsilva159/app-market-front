@@ -1,4 +1,4 @@
-.container{
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,29 +8,33 @@
   margin: 100px auto;
   border-radius: 10px;
 }
-.information{
+.information {
   width: 60%;
-  mat-form-field{
+  mat-form-field {
     width: 100%;
   }
 }
-.button{
+.button {
   display: flex;
   flex-direction: column;
-  button{
+  button {
     width: 100%;
     height: 40px;
     border-radius: 5px;
     cursor: pointer;
     margin: 10px 0;
   }
-  .btn-save{
+  .btn-save {
     background-color: #0000ff;
-  color:#fff;
-    &:hover{
+    color: #fff;
+    &:hover {
       background-color: #fff;
       color: #0000ff;
     }
+    &:disabled {
+      background-color: #6d7a8a;
+      color: #e0e0e0;
+      cursor: auto;
+    }
   }
-
 }

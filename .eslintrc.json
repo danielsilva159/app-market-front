@@ -1,0 +1,25 @@
+{
+  "extends": "gam",
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "env": {
+    "es6": true
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "quotes": ["error", "single"],
+    "no-param-reassign": "off",
+    "object-curly-newline": "off",
+    "prefer-destructuring": "off",
+    "arrow-parens": "off",
+    "spaced-comment": "off",
+    "object-shorthand": "off",
+    "no-plusplus": "off",
+    "arrow-body-style": "off",
+    "no-unused-vars": "off",
+    "linebreak-style": "off",
+    "operator-linebreak": "off",
+    "implicit-arrow-linebreak": "off"
+  }
+}

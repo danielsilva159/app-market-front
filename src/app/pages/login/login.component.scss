@@ -33,6 +33,11 @@
       background-color: #fff;
       color: #0000ff;
     }
+    &:disabled{
+      background-color: #6d7a8a;
+      color: #e0e0e0;
+      cursor: auto;
+    }
   }
   a{
     margin-top: 10px;
@@ -41,6 +46,7 @@
     &:hover{
       color:#000
     }
+
   }
 
 }
