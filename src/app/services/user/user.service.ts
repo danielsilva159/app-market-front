@@ -12,4 +12,7 @@ export class UserService {
   createUser(user: UserInterface) {
     return this.http.post(`${environment.BASE_URL}/user`, user);
   }
+  login(user: UserInterface) {
+    return this.http.post(`${environment.BASE_URL}/auth`, user);
+  }
 }
